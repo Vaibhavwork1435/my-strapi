@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "single_texts",
+  "info": {
+    "singularName": "single-text",
+    "pluralName": "single-texts",
+    "displayName": "SINGLE_TEXT"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SKILL_MATRIX": {
+      "type": "string"
+    }
+  }
+}
