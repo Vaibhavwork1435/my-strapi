@@ -550,6 +550,12 @@ export interface ApiCourseCourse extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    Banner_Button_First_Text: Schema.Attribute.String;
+    Banner_Button_Second_Text: Schema.Attribute.String;
+    Breadcrumb: Schema.Attribute.Component<
+      'breadcrumb.breadcrub-component',
+      true
+    >;
     CONTENT: Schema.Attribute.RichText;
     COVER_IMAGE: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
@@ -559,6 +565,8 @@ export interface ApiCourseCourse extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     DESCRIPTION: Schema.Attribute.Text;
+    GET_A_QUITE_LINK_TEXT: Schema.Attribute.String;
+    Learners_TEXT: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -566,7 +574,9 @@ export interface ApiCourseCourse extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     NAME: Schema.Attribute.String & Schema.Attribute.Required;
+    Pay_once_Text: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    REVIEWS_TEXT: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

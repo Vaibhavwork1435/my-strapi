@@ -30,6 +30,29 @@
     },
     "CONTENT": {
       "type": "richtext"
+    },
+    "Banner_Button_First_Text": {
+      "type": "string"
+    },
+    "Banner_Button_Second_Text": {
+      "type": "string"
+    },
+    "REVIEWS_TEXT": {
+      "type": "string"
+    },
+    "Learners_TEXT": {
+      "type": "string"
+    },
+    "GET_A_QUITE_LINK_TEXT": {
+      "type": "string"
+    },
+    "Pay_once_Text": {
+      "type": "string"
+    },
+    "Breadcrumb": {
+      "type": "component",
+      "component": "breadcrumb.breadcrub-component",
+      "repeatable": true
     }
   }
 }

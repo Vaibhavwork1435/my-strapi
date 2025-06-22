@@ -1,5 +1,21 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface BreadcrumbBreadcrubComponent extends Struct.ComponentSchema {
+  collectionName: 'components_breadcrumb_breadcrub_components';
+  info: {
+    displayName: 'Breadcrub_component';
+  };
+  attributes: {
+    Breadcrumb_first_ext: Schema.Attribute.String;
+    Breadcrumb_FIRST_LINK: Schema.Attribute.String;
+    BREADCRUMB_Fourth_TEXT: Schema.Attribute.String;
+    BREADCRUMB_SECOND_LINK: Schema.Attribute.String;
+    BREADCRUMB_SECOND_LINK_TEXT: Schema.Attribute.String;
+    BREADCRUMB_THIRD_LINK: Schema.Attribute.String;
+    BREADCRUMB_THIRD_LINK_TEXT: Schema.Attribute.String;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -63,6 +79,7 @@ export interface SharedSlider extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'breadcrumb.breadcrub-component': BreadcrumbBreadcrubComponent;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

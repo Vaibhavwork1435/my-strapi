@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_breadcrumb_breadcrub_components",
+  "info": {
+    "displayName": "Breadcrub_component"
+  },
+  "options": {},
+  "attributes": {
+    "Breadcrumb_first_ext": {
+      "type": "string"
+    },
+    "Breadcrumb_FIRST_LINK": {
+      "type": "string"
+    },
+    "BREADCRUMB_SECOND_LINK_TEXT": {
+      "type": "string"
+    },
+    "BREADCRUMB_SECOND_LINK": {
+      "type": "string"
+    },
+    "BREADCRUMB_THIRD_LINK_TEXT": {
+      "type": "string"
+    },
+    "BREADCRUMB_THIRD_LINK": {
+      "type": "string"
+    },
+    "BREADCRUMB_Fourth_TEXT": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
